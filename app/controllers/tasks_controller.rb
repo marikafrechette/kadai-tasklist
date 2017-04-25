@@ -54,7 +54,8 @@ class TasksController < ApplicationController
     params.require(:task).permit(:content)
   end
   
-  def message_params
-    params.require(:task).permit(:content,)
+  def task_params
+    params.require(:task).permit(:content, :title)
   end
+  
 end
